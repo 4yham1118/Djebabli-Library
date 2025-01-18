@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Djebabli Library</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Title Section-->
+    <div class="title">
+        <h1>Djebabli Library</h1>
+    </div>
+
+    <!-- Navbar Section -->
+    <div class="navbar">
+        <div class="logo">
+            <img src="Media/Djebabli_Library_Logo.png" alt="Logo" id="logo">
+            <label for="logo">Djebabli Library</label>
+        </div>
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="about-us.html">À propos de nous</a></li>
+            <li><a href="contact-us.html">Contactez-nous</a></li>
+        </ul>
+    </div>
+
+
+    <!-- Hero Section -->
+    <div class="field-container">
+        <div class="hero-section">
+            <h2>Read the World with Djebabli Library</h2>
+            <div class="video-wrapper">
+                <video src="Media/Home_Video_Showcase.mp4" autoplay loop muted playsinline>
+                    Video Showcasing our book library
+                </video>
+                <div class="video-buttons">
+                    <button onclick="location.href='nonReserves.html';">Réserver Maintenant</button>
+                    <button onclick="location.href='reserves.html';">Livres Déjà Réservés</button>
+                </div>
+            </div>
+        </div>
+        <div class="features">
+            <h2>Les Livres les plus Populaires</h2>
+            <div id="book-list" class="booklist">
+                <!-- Books will be dynamically added here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Reservation Modal -->
+    <div id="reservationModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Réserver un Livre</h2>
+            <form id="reservationForm">
+                <label for="name">Nom complet:</label>
+                <input type="text" id="name" name="name" required><br>
+
+                <label for="email">Adresse email:</label>
+                <input type="email" id="email" name="email" required><br>
+
+                <label for="duration">Durée de réservation (en jours):</label>
+                <input type="number" id="duration" name="duration" min="1" required><br>
+
+                <button type="submit">Réserver</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer Section-->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-content">
+                <p>&copy; 2024 Djebabli Library. Tous droits réservés.</p>
+                <ul class="footer-links">
+                    <li><a href="Terms and services/privacy.html">Politique de confidentialité</a></li>
+                    <li><a href="Terms and services/terms.html">Conditions générales</a></li>
+                    <li><a href="contact-us.html">Contactez-nous</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="outils/Jquery.js"></script>
+    <script type="module" src="JS/book.js"></script>
+    <script type="module" src="JS/main.js"></script>
+</body>
+
+</html>

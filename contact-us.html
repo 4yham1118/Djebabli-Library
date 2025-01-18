@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactez-nous - Djebabli Library</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navbar Section is inserted by script.js-->
+
+    <!-- Contact Section -->
+    <main class="contact-section">
+        <h2>Contactez-nous</h2>
+        <p>
+            Nous serions ravis de recevoir vos questions, suggestions ou commentaires à propos de
+            <strong>Djebabli Library</strong>. N'hésitez pas à nous contacter pour toute demande ou assistance.
+        </p>
+
+        <div class="contact-info">
+            <h3>Informations de Contact</h3>
+            <p><strong>Email :</strong> <a href="mailto:ayhamdjebabli@example.com">ayhamdjebabli@example.com</a></p>
+            <p><strong>Téléphone :</strong> +216 29 488 501</p>
+            <p><strong>Adresse :</strong> Le Kram, Tunis, Tunisie</p>
+        </div>
+
+        <h3>Envoyez-nous un message</h3>
+        <form id="contact-form">
+            <label for="name">Nom :</label>
+            <input type="text" id="name" name="name" placeholder="Votre nom" required>
+
+            <label for="email">Email :</label>
+            <input type="email" id="email" name="email" placeholder="Votre email" required>
+
+            <label for="message">Message :</label>
+            <textarea id="message" name="message" placeholder="Votre message..." rows="5" required></textarea>
+
+            <button type="submit">Envoyer</button>
+        </form>
+    </main>
+
+    <!-- Footer Section is inserted by script.js-->
+
+    <script src="outils/Jquery.js"></script>
+    <script type="module" src="JS/book.js"></script>
+    <script type="module" src="JS/main.js"></script>
+    <script src="JS/script.js"></script>
+</body>
+
+</html>
